@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<title>ικ μµΚθΊΜηΏμιώ¶θΣχιο·εγ®ε¦¤</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="demo.js"></script>
+</head>
+<body>
+<h1>λϊΞηΎΉιμΜε΅χεαήεΆΐεαΎρϋ¬κ¨°ε΅ωεβ¶η΄ΆμµΚθΊΜηΏμιώ¶θΣχιο·εγ®ε¦¤</h1>
+
+<div id="left">
+<h2>εβ―εγ©εβ¤εβΆεγ³εγ</h2>
+
+<table border=1 id="client_table" width="100%" summary="client">
+<tr id="header"><th>ιΰ¤<th>λϊΞηΎΉλφ‡</tr>
+</table>
+<input type="text" name="append" value="1">
+<button type="button" onclick="append()">πΑ½ικ </button>
+<br>
+<button type="button" onclick="send()">λϊΞηΎΉλφ®ε£ςεβµεγΌεγΐεΆ­π½Άρΰ</button>
+<div>ρϋ¬κ¨°ιµΐθΫό</div>
+<div id="encSumC" class="ret">0</div>
+<button type="button" onclick="dec()">ρϋ¬κ¨°ιµΐθΫόεβΔηΎ©ιο·</button>
+<div id="sum" class="ret">0</div>
+
+</div>
+
+<div id="middle">
+</div>
+
+<div id="right">
+
+<h2>εβµεγΌεγ</h2>
+<table border=1 id="server_table" width="100%" summary="server">
+<tr id="header"><th>λϊΞηΎΉλφ‡</tr>
+</table>
+<button type="button" onclick="sum()">λϊΞηΎΉιμΜε΅χεαήεΆΐεαΎρϋ¬κ¨</button>
+<div>ρϋ¬κ¨°ιµΐθΫό</div>
+<div id="encSumS" class="ret">0</div>
+<button type="button" onclick="recv()">ρϋ¬κ¨°ιµΐθΫόεβΔε¤±εγ©εβ¤εβΆεγ³εγ°εΆ­λθ»εα™</button>
+
+</div>
+
+</body>
+</html>
