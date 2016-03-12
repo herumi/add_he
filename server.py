@@ -4,7 +4,7 @@ import urlparse
 import json
 import os, sys, subprocess
 
-EXE='./sum_crypto.exe'
+EXE='./add_he.exe'
 
 def execCommand(args, inputStr):
 	p = subprocess.Popen(args, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=sys.stderr)
@@ -18,6 +18,12 @@ def execCommand(args, inputStr):
 	if ret != 0:
 		raise Exception("bad command", args, ret)
 	return s
+
+def init():
+	s = execCommand([EXE, 'init'], '')
+	print 'init', s
+	return "ok"
+
 
 def enc(v):
 	s = execCommand([EXE, 'enc', '-l', str(v)], '')
@@ -48,7 +54,9 @@ class ServerHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
 		print "ret", ret
 		data = None
 
-		if 'enc' in ret.keys():
+		if 'init' in ret.keys():
+			data = init()
+		elif 'enc' in ret.keys():
 			v = int(ret['enc'][0])
 			data = enc(v)
 		elif 'sum' in ret.keys():

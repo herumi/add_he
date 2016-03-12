@@ -39,6 +39,10 @@ function getJson(callback, method, url, data) {
 	req.send(data)
 }
 
+function init() {
+	getJson(function(){}, 'GET', URL + '?init')
+}
+
 function append() {
 	var v = document.getElementsByName('append')[0].value
 	console.log(v)

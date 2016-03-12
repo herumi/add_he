@@ -1,42 +1,51 @@
-* ικ μµΚθΊΜηΏμιώ¶θΣχιο·εγ®ε¦¤
+# ε ζ³•ζΊ–εε‹ζ—ε·γƒ‡γƒΆ
 
-* ιλΚζ½ΨιΔ²κ¤ƒ
-** x64 Windows + Visual Studio
-** Linux + gcc, clang
+# ε‹•δ½η’°εΆƒ
+* x64 Windows + Visual Studio
+* Linux + gcc, clang
 
-* ιλΚζ½ΨθΜ»μµ•
+# ε‹•δ½ζ–Ήζ³•
 
-** εγΚε¤£εβ¤εγ«εβΔη½φκΐΞε΅ωεβ¶ε€‚
+* γƒ•γ‚΅γ‚¤γƒ«γ‚’ε–εΎ—γ™γ‚‹γ€‚
 ```
 md work
 git clone git@github.com:herumi/xbyak.git
 git clone git@github.com:herumi/cybozulib.git
 git clone git@github.com:herumi/mcl.git
-git clone git@github.com:herumi/sum_crypto.git
+git clone git@github.com:herumi/add_he.git
 git clone git@github.com:herumi/cybozulib_ext.git # only for Windows
 ```
-** `sum_crypto.cpp'εβΔε¤µεγ³εγΒε¤¦εγ«εαÒε£λεΰ‚
-Windowsεαªεβ‰
+* `add_he.cpp'γ‚’γ‚³γƒ³γƒ‘γ‚¤γƒ«γ™γ‚‹γ€‚
+Windowsγªγ‚‰
 ```
-cd sum_crypto
+cd add_he
 mk.bat
 ```
-Linuxεαªεβ‰
+Linuxγªγ‚‰
 ```
 make
 ```
 
-** θΊ€κΌ¦εα εαΒι§Πη―¬λΊ·εα¨ιε¬ρφ¶λΊ·εβΔζ½Ψθ―πεαÒε£λεΰ‚
+* δΈ€εΊ¦γ γ‘η§ε―†ιµγ¨ε…¬ι–‹ιµγ‚’δ½ζγ™γ‚‹γ€‚
 ```
-./sum_crypto.exe init
+./add_he.exe init
 ```
-** εβµεγΌεγΐε£ςπ··ιλΚε΅ωεβ¶ε€‚
+* γ‚µγƒΌγƒγ‚’θµ·ε‹•γ™γ‚‹γ€‚
 ```
-cd sum_crypto
+cd add_he
 python server.py
 ```
 
-** ξ¤Ίπ¬
-Firefox, Chromeεα®εα©εα΅εβ²ε΅λεα§
+* ηΆΊθª
+Firefox, Chromeγ®γ©γ΅γ‚‰γ‹γ§
 `index.html`
-εβΔλΛλεαΎε€‚
+γ‚’ι–‹γγ€‚
+
+# License
+
+modified new BSD License
+http://opensource.org/licenses/BSD-3-Clause
+
+# Author
+
+MITSUNARI Shigeo(herumi@nifty.com)
