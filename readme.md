@@ -1,4 +1,4 @@
-# 加法準同型暗号デモ
+# 加法準同型暗号デモ(demo of additive homomorphic encryption)
 
 # 動作環境
 * x64 Windows + Visual Studio
