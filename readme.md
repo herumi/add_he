@@ -37,7 +37,7 @@ python server.py
 ```
 
 * 確認
-Firefox, Chromeのどちらかで
+IE, Firefox, Chromeなどのブラウザで
 `index.html`
 を開く。
 
