@@ -70,7 +70,7 @@ function send() {
 	obj.html('')
 	{
 		var header = [
-			'ëúÎç¾¹ëö‡'
+			'æš—å·æ–‡'
 		]
 		var t = $('<tr>').attr('id', 'header')
 		for (var i = 0; i < header.length; i++) {
