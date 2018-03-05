@@ -3,7 +3,7 @@ all: add_he.exe
 ../mcl/lib/libmcl.a:
 	$(MAKE) -C ../mcl
 CXXFLAGS+=-I ../mcl/include/ -I ../cybozulib/include/ -I ../xbyak/ -Ofast -march=native
-LDFLAGS+=-L ../mcl/lib -lmcl -lgmp -lgmpxx
+LDFLAGS+=-L ../mcl/lib -lmcl -lgmp -lgmpxx -lcrypto
 
 add_he.o: add_he.cpp
 	$(CXX) -c -o $@ $< $(CXXFLAGS)
