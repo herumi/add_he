@@ -4,13 +4,12 @@
 */
 #include <iostream>
 #include <fstream>
-#include <cybozu/random_generator.hpp>
 #include <cybozu/option.hpp>
 #include <cybozu/itoa.hpp>
 #include <mcl/she.hpp>
 
 using namespace mcl::she;
-using namespace mcl::bn_current;
+using namespace mcl::bn;
 
 typedef std::vector<int> IntVec;
 
